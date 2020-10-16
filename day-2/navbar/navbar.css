@@ -7,7 +7,7 @@ body {
 .navbar {
     background-color: #ffffff;
     text-align: right;
-    padding-right: 100px;
+    padding-right: 200px;
 }
 
 ul {
@@ -25,10 +25,15 @@ a {
     text-decoration: none;
     color: black;
     font-family: 'Roboto', sans-serif;
+    font-weight: 200;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #f66d6c;
     cursor: pointer;
+    font-weight: bold;
+}
+
+a:hover::after {
+    content: '';
+    border-bottom: 1px solid blue;
 }
