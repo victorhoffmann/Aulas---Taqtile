@@ -208,3 +208,47 @@ body {
   font-size: 4.5rem;
   font-weight: 100;
 }
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav .nav-item {
+  padding: 16px;
+}
+
+#footer-links .nav-item
+.header nav .nav-item:last-child {
+  padding: 0;
+}
+
+#hero-title {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  width: 50%;
+}
+
+#highlight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8.5rem;
+  padding-top: 2rem;
+}
+
+.callout {
+  width: 50%;
+}
+
+#footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6.5rem;
+}
+
+#footer-links .nav-item a{
+  padding: 0.5rem;
+}

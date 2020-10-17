@@ -7,7 +7,7 @@ body {
   background-color: #eee;
 }
 
-.explore {
+.course-modules {
   display: flex;
   justify-content: space-around;
 }
@@ -17,6 +17,8 @@ body {
   margin: 25px;
   font-size: 3rem;
 }
+
+/*Abaixo estilização do card*/
 
 .card {
   width: 300px;

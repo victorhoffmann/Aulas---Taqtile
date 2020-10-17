@@ -8,11 +8,17 @@ body {
   width: 300px;
   height: 300px;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .tag {
   background-color: #9999ff;
   border-radius: 12px;
+  display: flex;
+  width: fit-content;
+  padding: 4px 8px;
 }
 
 .circle {
@@ -37,4 +43,14 @@ body {
   color: #5555ff;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.module-wrapper {
+  display: flex;
+
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
 }
