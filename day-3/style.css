@@ -56,11 +56,13 @@ ul {
 }
 
 a, button {
-  cursor: pointer;
+  cursor: pointer; 
+  text-decoration: none;
 }
 
 a:visited {
   outline: none;
+  color: inherit;
 }
 
 button {
@@ -215,13 +217,14 @@ body {
   align-items: center;
 }
 
+#footer-links .nav-item,
 .header nav .nav-item {
   padding: 16px;
 }
 
-#footer-links .nav-item
+#footer-links .nav-item:last-child,
 .header nav .nav-item:last-child {
-  padding: 0;
+  padding-right: 0;
 }
 
 #hero-title {
@@ -234,8 +237,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 8.5rem;
-  padding-top: 2rem;
+  padding: 120px;
 }
 
 .callout {
@@ -246,9 +248,73 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 6.5rem;
 }
 
-#footer-links .nav-item a{
-  padding: 0.5rem;
+/* Cards */
+.card {
+  width: 20rem;
+  height: 25rem;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  transition: box-shadow 0.3s, background-color 0.3s;
+  border-radius: 1rem;
+}
+
+.card:hover {
+  background-color: white;
+  box-shadow: 0px 10px 50px 0px rgba(0,0,0,0.35);
+  cursor: pointer;
+}
+
+.tag {
+  height: 2rem;
+  width: fit-content;
+  
+  padding: 0.1rem 1rem;
+  display: flex;
+  align-items: center;
+  
+  background-color: #2e2f35;
+  color: #ffffff;
+
+  border-radius: 1rem;
+}
+
+.circle {
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 1.2rem;
+  background-color: #fe763e;
+  margin-right: 0.5rem;
+}
+
+.icon {
+  font-size: 4rem;
+  color: #2e2f35;
+}
+
+/* Grid */
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.spacer-xsmall.vertical {
+  height: 0.5rem;
+  flex-basis: 0.5rem;
+}
+
+.spacer-medium.horizontal {
+  width: 2rem;
+  flex-basis: 2rem;
+}
+
+#lista-cards {
+  display: flex;
 }
