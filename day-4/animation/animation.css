@@ -1,0 +1,14 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #555;
+    transition: transform 3s, border-radius 3s;
+    transform: translateY(0, 0);
+    border-radius: 0px;
+}
+
+.box:hover {
+    /* background-color: #eee; */
+    transform: translateY(20px, 20px);
+    border-radius: 100px;
+}

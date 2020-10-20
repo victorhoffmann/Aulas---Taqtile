@@ -1,0 +1,23 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border: 1px solid red;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.v-spacer-sm {
+    height: 8px;
+}
+
+.h-spacer-md {
+    width: 16px;
+}
